@@ -3,7 +3,6 @@ import * as Nodemailer from "nodemailer";
 import { SendMailOptions, SentMessageInfo } from "nodemailer";
 
 import { IServerInfo } from "./ServerInfo";
-import { Resolver } from "dns";
 
 const nodemailer = require("nodemailer");
 

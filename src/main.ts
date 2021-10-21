@@ -5,14 +5,16 @@ import * as IMAP from "./IMAP";
 import * as SMTP from "./SMTP";
 import * as Contacts from "./Contacts";
 import { IContact } from "./Contacts";
-import { allowedNodeEnvironmentFlags } from "process";
 
 const app: Express = express();
+
+const server = app.listen(process.env.PORT || 8081, () => {
+  console.log("Server is started on 127.0.0.1:" + (process.env.PORT || 8081));
+});
+
 app.use(express.json());
 
-console.log("Server running on 127.0.0.1:8080!");
-
-app.use("/", express.static(path.join(__dirname, "../../client/dist")));
+app.use("/", express.static(path.join(__dirname, "../client/dist")));
 
 app.use(function (
   inRequest: Request,
