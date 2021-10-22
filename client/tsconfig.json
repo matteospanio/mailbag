@@ -13,5 +13,5 @@
     "removeComments": true,
     "paths": { "components/*": ["src/components/*"] }
   },
-  "files": ["src/**/*"]
+  "include": ["src"]
 }
