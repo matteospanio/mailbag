@@ -2,16 +2,14 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "sourceMap": true,
-    "allowSyntheticDefaultImports": true,
     "noImplicitAny": false,
     "module": "commonjs",
-    "target": "es5",
-    "allowJs": true,
-    "jsx": "react",
+    "target": "es6",
     "lib": ["es2015", "es2017", "dom"],
-    "baseUrl": "./",
     "removeComments": true,
+    "jsx": "react",
+    "allowJs": true,
+    "baseUrl": "./",
     "paths": { "components/*": ["src/components/*"] }
-  },
-  "include": ["src"]
+  }
 }

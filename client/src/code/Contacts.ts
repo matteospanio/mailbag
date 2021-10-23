@@ -23,7 +23,7 @@ export class Worker {
     return response.data;
   }
 
-  public async deleteContact(inID): Promise<void> {
+  public async deleteContact(inID: any): Promise<void> {
     await axios.delete(`${config.serverAddress}/contacts/${inID}`);
   }
 }
