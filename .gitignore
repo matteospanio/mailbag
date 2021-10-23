@@ -1,6 +1,6 @@
-server/node_modules/
+./server/node_modules/
 server/dist/
 .env
 server/serverInfo.json
 
-client/node_modules/
+./client/node_modules/
