@@ -9,7 +9,9 @@ import { IContact } from "./Contacts";
 const app: Express = express();
 
 const server = app.listen(process.env.PORT || 8081, () => {
-  console.log("Server is started on 127.0.0.1:" + (process.env.PORT || 8081));
+  console.log(
+    "Server is started on http://127.0.0.1:" + (process.env.PORT || 8081)
+  );
 });
 
 app.use(express.json());
